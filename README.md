@@ -1,5 +1,5 @@
 # Professional Boost
-Professional boost development
+Professional C++11/14 & Boost Development Guide
 
 ##Requirements
 * Linux or other UNIX like
