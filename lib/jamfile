@@ -9,6 +9,10 @@ lib boost_system ;
 lib boost_program_options ;
 lib boost_context ;
 lib boost_atomic ;
+lib boost_regex ;
+
+# need bzlib.h
+lib boost_iostreams ;
 
 lib boost_unit_test_framework ;
 lib boost_test_exec_monitor ;
