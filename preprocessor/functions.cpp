@@ -19,12 +19,12 @@ BOOST_PP_ASSERT(BOOST_PP_EQUAL(x, 36))
 /////////////////
 
 #define helper(z, n, d) BOOST_PP_CAT(d,n)
-#define DECL_VAS(n, var) BOOST_PP_ENUM(n, helper, var)
+#define DECL_VARS(n, var) BOOST_PP_ENUM(n, helper, var)
 
-int DECL_VAS(10, x);
+int DECL_VARS(10, x);
 
 #undef helper
-#undef DECL_VAS
+#undef DECL_VARS
 
 #define NGX_NULL_HELPER(z, n, d) d
 #define NGX_MODULE_NULL(n)      \
@@ -35,10 +35,10 @@ int DECL_VAS(10, x);
 /////////////////
 
 #define helper(z, n, d) d##n{n};
-#define DECL_VAS(n, decl) BOOST_PP_REPEAT(n, helper, decl)
+#define DECL_VARS(n, decl) BOOST_PP_REPEAT(n, helper, decl)
 
-DECL_VAS(3, int x)
+DECL_VARS(3, int x)
 
 #undef helper
-#undef DECL_VAS
+#undef DECL_VARS
 
