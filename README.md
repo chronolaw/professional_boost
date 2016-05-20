@@ -10,5 +10,5 @@ Professional C++11/14 & Boost Development Guide
 * [ngx_cpp_dev](https://github.com/chronolaw/ngx_cpp_dev) - Nginx cpp development kit, with the power of C++11 and Boost Library.
 * [favorite-nginx](https://github.com/chronolaw/favorite-nginx) - Selected favorite nginx modules and resources.
 * [boost guide](https://github.com/chronolaw/boost_guide.git) - Sample code for Boost library Guide.
-* [annotated_nginx](https://github.com/chronolaw/annotated_nginx) - 注释nginx1.8.1，学习研究源码
+* [annotated_nginx](https://github.com/chronolaw/annotated_nginx) - 注释nginx1.10.0，学习研究源码
 
