@@ -47,7 +47,7 @@ void case3()
 
 ///////////////////////////////////////
 
-constexpr long mega()
+constexpr long giga()
 {
     return 1000*1000*1000;
 }
