@@ -1,7 +1,11 @@
 // Copyright (c) 2016
 // Author: Chrono Law
 #include <std.hpp>
-using namespace std;
+//using namespace std;
+using std::cout;
+using std::endl;
+using std::vector;
+using std::string;
 
 #include <boost/asio.hpp>
 using namespace boost;

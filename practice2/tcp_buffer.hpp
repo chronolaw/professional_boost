@@ -4,8 +4,14 @@
 #define _PRO_BOOST_TCP_BUFFER_HPP
 
 #include <boost/asio.hpp>
-#include <boost/config/suffix.hpp>
 #include <boost/numeric/conversion/cast.hpp>
+
+#include <boost/version.hpp>
+#if BOOST_VERSION <= 106400
+#include <boost/config/suffix.hpp>
+#else
+#include <boost/config/detail/suffix.hpp>
+#endif
 
 class tcp_buffer  final
 {

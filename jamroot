@@ -4,7 +4,8 @@ import testing ;
 using gcc : : g++
         : <cxxflags>-std=c++11
           <cxxflags>-fPIC
-          <cxxflags>-Wno-multichar  #for boost::mpl
+          <cxxflags>-Wno-multichar  # for boost::mpl
+          <cxxflags>-Wno-attributes # for [[deprecated]]
         ;
 
 path-constant DEV_ROOT : . ;
