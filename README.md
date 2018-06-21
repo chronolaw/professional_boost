@@ -1,6 +1,8 @@
 # Professional Boost
 Professional C++11/14 & Boost Development Guide
 
+[![Build Status](https://travis-ci.org/chronolaw/professional_boost.svg?branch=master)](https://travis-ci.org/chronolaw/professional_boost)
+
 ## Requirements
 * Linux or other UNIX like
 * C++11(gcc 4.6 or later)
