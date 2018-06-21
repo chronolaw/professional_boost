@@ -117,6 +117,7 @@ void case4()
     unordered_set<int> us {1,2,5,8,15};
     hv = hash_range(us.begin(), us.end());
 
+    (void)hv;
 }
 
 ///////////////////////////////////////
