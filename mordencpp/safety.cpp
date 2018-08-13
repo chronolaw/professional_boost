@@ -61,11 +61,11 @@ void case2()
 
 void case3()
 {
-    [[deprecated]] int x = 0;
+    //[[deprecated]] int x = 0;
 
     class [[deprecated]] demo {};
 
-    boost::ignore_unused(x);
+    //boost::ignore_unused(x);
 }
 
 ///////////////////////////////////////

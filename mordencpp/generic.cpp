@@ -67,11 +67,14 @@ void case4()
 template<typename K, typename V>
 using x = std::map<K, V>;
 
-template<typename ... T>
-class variadic_class
-{
-    using type = x<T...>;
-};
+// can not work on latest gcc
+// error: pack expansion argument for non-pack parameter
+//
+// template<typename ... T>
+// class variadic_class
+// {
+//     using type = x<T ...>;
+// };
 
 template<typename ... Args>
 void variadic_func(Args... args)
