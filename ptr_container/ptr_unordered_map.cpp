@@ -15,8 +15,10 @@ void case1()
 
     int a = 1;
     m.insert(m.begin(),a, new string("one"));
-    m.insert(m.end(), 10,
-                auto_ptr<string>(new string("ten")));
+    a = 10;
+    m.insert(m.end(), a,
+                (new string("ten")));
+                //auto_ptr<string>(new string("ten")));
     m[3] = "three";
 
     assert(m.at(3) == "three");

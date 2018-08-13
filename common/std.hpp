@@ -14,6 +14,7 @@
 #include <algorithm>
 #include <complex>
 #include <array>
+#include <numeric>
 //using namespace std;
 
 #endif  //_PROFESSIONAL_BOOST_STD_HPP

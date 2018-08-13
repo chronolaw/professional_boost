@@ -55,11 +55,13 @@ void case3()
     typedef ptr_vector<string> ptr_vec;
     ptr_vec vec;
 
-    auto_ptr<string> ap(new string("123"));
+    auto ap = (new string("123"));
+    //auto_ptr<string> ap(new string("123"));
     vec.push_back(ap);
-    assert(ap.get() == 0);
+    //assert(ap.get() == 0);
 
-    vec.push_back(auto_ptr<string>(new string("abc")));
+    vec.push_back((new string("abc")));
+    //vec.push_back(auto_ptr<string>(new string("abc")));
     vec.push_back(new string("xyz"));
     assert(vec.size() == 3); 
 

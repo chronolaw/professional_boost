@@ -15,7 +15,9 @@ void case1()
 
     int a = 1;
     m.insert(a, new string("one"));
-    m.insert(10, auto_ptr<string>(new string("ten")));
+    a = 10;
+    m.insert(a, new string("ten"));
+    //m.insert(10, auto_ptr<string>(new string("ten")));
 
     assert(m.size() == 2);
     assert(m[10] == "ten");
@@ -46,7 +48,9 @@ void case2()
     typedef ptr_map<int, nullable<string> > ptr_map_t;
     ptr_map_t m;
 
-    m.insert(10, auto_ptr<string>(new string("ten")));
+    int a = 10;
+    m.insert(a, (new string("ten")));
+    //m.insert(10, auto_ptr<string>(new string("ten")));
     m.at(10) = "tenten";
 
     //m[3] = "three";
