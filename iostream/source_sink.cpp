@@ -12,7 +12,7 @@ using namespace std;
 
 namespace io = boost::iostreams;
 using namespace io;
-using namespace boost;
+//using namespace boost;
 
 ///////////////////////////////////////
 
@@ -47,11 +47,11 @@ public:
         return read_count;
     }
 private:
-    typedef variate_generator<rand48, uniform_smallint<>> rand_t;
+    typedef boost::variate_generator<boost::rand48, boost::uniform_smallint<>> rand_t;
 
     static rand_t& rand()
     {
-        static rand_t r(rand48(time(0)), uniform_smallint<>('0', 'z'));
+        static rand_t r(boost::rand48(time(0)), boost::uniform_smallint<>('0', 'z'));
 
         return r;
     }

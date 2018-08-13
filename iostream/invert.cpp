@@ -3,7 +3,12 @@
 #include <std.hpp>
 using namespace std;
 
+#include <boost/version.hpp>
+#if BOOST_VERSION <= 106400
 #include <boost/uuid/sha1.hpp>
+#else
+#include <boost/uuid/detail/sha1.hpp>
+#endif
 
 #include <boost/iostreams/concepts.hpp>
 #include <boost/iostreams/device/array.hpp>
