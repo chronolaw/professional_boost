@@ -4,7 +4,7 @@
 using namespace std;
 
 #include <boost/iterator/reverse_iterator.hpp>
-using namespace boost;
+//using namespace boost;
 
 ///////////////////////////////////////
 
@@ -12,10 +12,12 @@ void case1()
 {
     char s[] = "hello iterator.";
 
+    // after c++14 there is std::make_reverse_iterator
+
     std::copy(
-            make_reverse_iterator(s +
+            boost::make_reverse_iterator(s +
                 char_traits<char>::length(s)),
-            make_reverse_iterator(s),
+            boost::make_reverse_iterator(s),
             ostream_iterator<char>(cout));
 
 }
