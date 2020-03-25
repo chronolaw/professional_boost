@@ -1,5 +1,6 @@
 sudo: required
-dist: trusty
+dist: trusty    #1404
+#dist: xenial   #1604
 
 os: linux
 
